@@ -26,14 +26,14 @@ The provided dataset is the direct output from a Twitter crawler, and it has to 
 
 Filtering is done making sure only to process lines that conform to the expected format. (that is, a String that has N parts separated by a ';'. Also, There are numerous tweets written in foreign languages, which contain characters with non-standard encoding that might cause some unexpected (i.e. too high) values. This is a common occurrence when dealing with real data. Thus, tweets are filtered out with a length longer than 140 characters.
 
--- Part 1 -- Creating a Histogram plot that depicts the distribution of tweet sizes (measured in number of characters) among the Twitter dataset. To make the data more readable, the histogram aggregate bars in groups of 5 (that is, first bar counts tweets of length 1-5, second bar counts tweets 6-10, and so on) as part of MapReduce job.
+-- Part A -- Creating a Histogram plot that depicts the distribution of tweet sizes (measured in number of characters) among the Twitter dataset. To make the data more readable, the histogram aggregate bars in groups of 5 (that is, first bar counts tweets of length 1-5, second bar counts tweets 6-10, and so on) as part of MapReduce job.
 
--- Part 2 -- Creating a bar plot showing the number of Tweets that were posted each hour of the event.
+-- Part B -- Creating a bar plot showing the number of Tweets that were posted each hour of the event.
 
--- Part 3 -- For the most popular hour of the games, top 10 hashtags are computed that were emitted during that hour.
+-- Part C -- For the most popular hour of the games, top 10 hashtags are computed that were emitted during that hour.
 
-For Part 4 & Part 5 - An additional secondary dataset is used, containing the list of Rio 2016 athletes that obtained a medal, and their discipline. The data is saved in Comma(,)-separated-values format, with the first row providing header names. Dataset has been downloaded from https://www.kaggle.com/rio2016/olympic-games/data . The dataset has been cropped to only include medalists in an effort to reduce the computation time it will impose to the cluster.
+For Part D & Part E - An additional secondary dataset is used, containing the list of Rio 2016 athletes that obtained a medal, and their discipline. The data is saved in Comma(,)-separated-values format, with the first row providing header names. Dataset has been downloaded from https://www.kaggle.com/rio2016/olympic-games/data . The dataset has been cropped to only include medalists in an effort to reduce the computation time it will impose to the cluster.
 
--- Part 4 -- Drawing a table with the top 30 athletes in number of mentions across the dataset.
+-- Part D -- Drawing a table with the top 30 athletes in number of mentions across the dataset.
 
--- Part 5 -- Drawing a table with the top 20 sports according to the mentions of olympic athletes captured.
+-- Part E -- Drawing a table with the top 20 sports according to the mentions of olympic athletes captured.
