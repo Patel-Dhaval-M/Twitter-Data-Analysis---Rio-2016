@@ -1,4 +1,4 @@
-# Twitter-Analysis-with-Map-reduce
+# Twitter Data Analysis with Hadoop Map reduce in Java
 
 To analyse a dataset of Tweets collected during the 2016 Rio Olympic Games
 
